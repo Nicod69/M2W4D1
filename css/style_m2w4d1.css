@@ -1,0 +1,172 @@
+body{
+    text-align: center;
+}
+.main-container{
+    /*border: 1px solid red;*/
+    max-width: 550px;
+
+}
+.header{
+  background-image: url("../img/job_search_header_with_icons.png");
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+  position:sticky;
+  top: 20px;
+  
+}
+h1{
+    color: red;
+}
+.form-container{
+    padding: 15px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    gap:15px;
+    max-width: 500px;
+    width: 100%;
+}
+.dataInput{
+    margin-left: 5px;
+    width: 80%;
+    border-radius: 15px;
+}
+.btnContainer{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.btnSearch{
+    margin-top: 5px;
+    padding: 0 15px 5px 15px;
+    border-radius: 25px;
+    text-decoration: underline;
+    background-color: rgb(100, 13, 214);
+    color: white;
+    
+}
+
+.btnSearch:hover{
+    background-color: yellowgreen;
+    cursor: pointer;
+}
+
+.btnReset{
+  margin-top: 5px;
+  padding: 0 15px 5px 15px;
+  border-radius: 25px;
+  text-decoration: underline;
+  background-color: rgb(187, 24, 133);
+  color: white;
+  font-weight: bold;
+  
+}
+
+.result-container p{
+  background-color: rgb(46, 81, 146);
+  width: 100%;
+  color: white;
+}
+.totalResult{
+  font-size: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  .result-container{
+    border: 1px solid blue;
+    text-align: left;
+  }
+  table{
+    border: 1px solid grey;
+    padding: 5px;
+    width: 100%;
+
+  }
+  table td{
+    border: 1px solid grey;
+    padding: 3px;
+  }
+  .tr-title{
+    background-color: grey;
+    font-weight: bold;
+    text-align: center;
+    
+  }
