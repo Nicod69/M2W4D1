@@ -125,7 +125,7 @@ const jobs = [
   },
 ]
 
-
+//ricavo tutti gli oggetti della pagina HTML che mi servono
 const objLOCATION = document.getElementById("dataLocation");
 const objJOB = document.getElementById("dataJob");
 const objRESET = document.getElementById("btnReset");
@@ -134,7 +134,7 @@ const objRESULT = document.getElementById("result-container");
 const objTOTALRESULT = document.getElementById("totalResult");
 const objTBRESULT = document.getElementById("tbResult");
 
-let strResult ="";
+
 
 function searchData(title, location){
   location = location.toLowerCase();
@@ -145,24 +145,12 @@ function searchData(title, location){
    //console.log(result);
   //alert(result[0].location);
   //alert(result[0].title);
-  strResult = "Trovati " + result.length + " risultati in base ai criteri di ricerca";
-  objTOTALRESULT.innerText = strResult;
-  //strResult ='';
-  //strResult +="<table><tr><td class='tr-title'>Title</td><td class='tr-title'>Location</td></th>";
-  
-  //objRESULT.innerText = "Trovati " + result.length + " in base ai criteri di ricerca";
-  if (result.length >0){
-    /*
-    //ciclo l'array
-    for (let i=0;i<result.length;i++){
-      strResult += "<tr><td>"+result[i].title +"</td><td>"+result[i].location+"</td></tr>";
-    }
-    strResult += "</table>";
-     //console.log(objTBRESULT);
-     objTBRESULT.innerHTML = strResult;
-    */
 
-    //aaltro metodo
+  objTOTALRESULT.innerText = "Trovati " + result.length + " risultati in base ai criteri di ricerca";
+  
+  if (result.length >0){
+    
+    //ciclo l'array dei risultati e li inserisco nella tabella
     for (let i=0;i<result.length;i++){
       let row = objTBRESULT.insertRow(i);
       let cellA = row.insertCell(0);
@@ -170,17 +158,12 @@ function searchData(title, location){
       cellA.innerText = result[i].title;
       cellB.innerText = result[i].location;
     }
-
-
-
-   
+ 
   }
 }
-//searchData("Specialist", "US, TX, Austin");
 
-//searchData("COMPLETION", "SAN RAMON");
-//searchData("head of CO", "de");
 
+//funzione che verifica eventualmente i dati inseriti e se tutto ok procede con la ricerca
 function checkData(){
   //eventuale futuro metodo di controllo dati inseriti
   /*
@@ -192,6 +175,8 @@ function checkData(){
   searchData(objJOB.value,objLOCATION.value)
 }
 
+
+//funzione di azzeramento campi di ricerca
 function resetFields(){
   objTBRESULT.innerHTML ='';
   objJOB.value ='';

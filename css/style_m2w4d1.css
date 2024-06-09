@@ -1,3 +1,10 @@
+/* CSS per esercizio M2W4D1
+  CSS per form di ricerca lavoro per tipo di lavoro e locazione
+  Ver. 1.0
+
+
+*/
+
 body{
     text-align: center;
 }
@@ -34,12 +41,15 @@ h1{
     width: 80%;
     border-radius: 15px;
 }
+
+
 .btnContainer{
     width: 100%;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 15px;
     
 }
 .btnSearch{
@@ -68,6 +78,11 @@ h1{
   
 }
 
+.result-container{
+  border: 1px solid blue;
+  text-align: left;
+}
+
 .result-container p{
   background-color: rgb(46, 81, 146);
   width: 100%;
@@ -78,6 +93,27 @@ h1{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+
+
+/* -- tabella contenitore elenco record trovati---*/
+table{
+  border: 1px solid grey;
+  padding: 5px;
+  width: 100%;
+
+}
+table td{
+  border: 1px solid grey;
+  padding: 3px;
+}
+.tr-title{
+  background-color: grey;
+  font-weight: bold;
+  text-align: center;
+  
+}
+
+/*---elenco font ---*/
 
 .roboto-thin {
     font-family: "Roboto", sans-serif;
@@ -150,23 +186,4 @@ h1{
     font-weight: 900;
     font-style: italic;
   }
-  .result-container{
-    border: 1px solid blue;
-    text-align: left;
-  }
-  table{
-    border: 1px solid grey;
-    padding: 5px;
-    width: 100%;
-
-  }
-  table td{
-    border: 1px solid grey;
-    padding: 3px;
-  }
-  .tr-title{
-    background-color: grey;
-    font-weight: bold;
-    text-align: center;
-    
-  }
+  
